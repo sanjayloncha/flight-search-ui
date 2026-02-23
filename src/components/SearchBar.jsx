@@ -1,5 +1,4 @@
 export default function SearchBar({ searchQuery }) {
-    console.log(searchQuery);
     const { origin, destination, departureDate, returnDate, ADT, CHD, INF, className, } = searchQuery;
     return (
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 px-6 py-3 mb-4 flex items-center justify-between w-full">
