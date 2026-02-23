@@ -22,7 +22,6 @@ export default function SearchBar({ searchQuery }) {
             {/* Departure */}
             <div className="flex flex-col">
                 <span className="text-xs text-gray-400 uppercase tracking-widest mb-1">Departure</span>
-                {/* <span className="text-sm font-semibold text-gray-800">{departureDate}</span> */}
                 <span className="text-sm font-semibold text-gray-800">{new Date(departureDate).toLocaleDateString("en-IN", {
                     day: "2-digit",
                     month: "short",
