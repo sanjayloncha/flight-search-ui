@@ -16,6 +16,8 @@ export default function FlightsPage() {
     const isLoading = useFlightStore((state) => state.isLoading);
     const setLoading = useFlightStore((state) => state.setLoading);
 
+    const searchQuery = data.data.result.searchQuery;
+
     const minPrice = useFlightStore((state) => state.minPrice);
     const maxPrice = useFlightStore((state) => state.maxPrice);
 
@@ -93,7 +95,7 @@ export default function FlightsPage() {
             {/* Centered width container */}
             <div className="max-w-[85%] mx-auto py-4">
 
-                <SearchBar />
+                <SearchBar searchQuery={searchQuery} />
 
                 {/* Grid layout container */}
                 {isLoading ?
